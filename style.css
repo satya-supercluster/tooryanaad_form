@@ -107,6 +107,7 @@ form{
 .inp:focus-within 
  label,.label-up{
     transform:translate(-3px,-1.4em);
+    transform:translate(0,-1.4em);
 }
 
 .numv::-webkit-outer-spin-button,

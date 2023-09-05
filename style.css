@@ -109,6 +109,16 @@ form{
     transform:translate(-3px,-1.4em);
 }
 
+.numv::-webkit-outer-spin-button,
+.numv::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.numv[type=number] {
+    -moz-appearance:textfield;
+}
+
+
 .games{
     margin:10px 0;
     padding:1.5%;

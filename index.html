@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Competition Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form-screen">
+      <div class="type">
+            <div class="options active ind">
+              <p>एकाकी सहभागिता</p>
+            </div>
+            <div class="options team">
+              <p>सामूहिक सहभागिता</p>
+            </div>
+      </div>
+
+      <form action="#" onclick="validate()" autocomplete="off">
+        <div class="optional-ind op">
+            <div class="inp">
+                <label class="top">नाम (Name)<span class="asterisk anames">*</span></label>
+                <input type="text"
+                class="p namev" onchange='check()' required>
+            </div>
+        </div>
+        <div class="optional-team op">
+
+            <div class="inp">
+                <label class="top">समूह का नाम (Team Name)<span class="asterisk anames">*</span></label>
+                <input type="text" class="p namev" onchange='check()'  required>
+            </div>
+            <div class="inp">
+                <label class="top">समूह प्रतिनिधि का नाम (Team Representative)<span class="asterisk anames">*</span></label>
+                <input type="text" class="p namev" onchange='check()'  required>
+            </div>
+        </div>
+
+        <div class="inp">
+            <label class="top">कॉलेज का नाम (College Name)<span class="asterisk anames">*</span></label>
+            <input type="text" class="p namev" onchange='check()'  required>
+        </div>
+
+        <div class="inp">
+            <label class="top">ई - मेल पता (Email)<span class="asterisk aemail">*</span></label>
+            <input type="email" class="p emailv" onchange='check()' required>
+        </div>
+
+        <div class="inp">
+            <label class="top">संपर्क सूत्र (Contact No.)<span class="asterisk anum">*</span></label>
+            <input type="number" class="p numv" onchange='check()'  required>
+        </div>
+
+        <div class="games">
+            <label class="left">प्रतियोगिताएं (Competitions):</label>
+            <div class="comp">
+                <div class="options2">
+                    <input type="checkbox" id="k1">
+                    <label for="k1">अभिव्यक्ति</label>
+                </div>
+                <div class="options2">
+                    
+                    <input type="checkbox" id="k2">
+                    <label for="k2">कवि सम्मेलन</label>
+                </div>
+                <div class="options2">
+                    
+                    <input type="checkbox" id="k3">
+                    <label for="k3">खिचड़ी</p>
+                </div>
+                <div class="options2">
+                   
+                    <input type="checkbox" id="k4">
+                    <label for="k4">वाद - विवाद</label>
+                </div>
+                <div class="options2">
+                    
+                    <input type="checkbox" id="k5">
+                    <label for="k5">नुक्कड़ - नाटक</label>
+                </div>
+                <div class="options2">
+                    
+                    <input type="checkbox" id="k6">
+                    <label for="k6">परिधानिका</label>
+                </div>
+                <div class="options2">
+                    <input type="checkbox" id="k7">
+                    <label for="k7">रचनात्मक लेख</label>
+                </div>
+                <div class="options2">
+                   
+                    <input type="checkbox" id="k8">
+                    <label for="k8">भारत मंथन</label>
+                </div>
+                <div class="options2">
+                    
+                    <input type="checkbox" id="k9">
+                    <label for="k9">सृजन</label>
+                </div>
+                <div class="options2">
+                    
+                    <input type="checkbox" id="k10">
+                    <label for="k10">चक्रव्यूह</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-div">
+            <button class="btn" type="submit">पंजीयन करें (Register Now)</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

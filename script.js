@@ -2,6 +2,7 @@ let type=document.querySelectorAll('.options');
 let choosen=1;
 let ind=document.querySelector('.optional-ind')
 let team=document.querySelector('.optional-team')
+let names =document.querySelectorAll('.namev');
 function activation(){
     type.forEach(element => {
         element.classList.remove('active');
@@ -16,10 +17,17 @@ function activation(){
     if(choosen==1){
         team.style.display="none";
         ind.style.display="block";
+        names[1].required=false;
+        names[2].required=false;
+        names[0].required=true;
+
     }
     else{
         ind.style.display="none";
         team.style.display="block";
+        names[1].required=true;
+        names[2].required=true;
+        names[0].required=false;
     }
 }
 let field=document.querySelector('.type');

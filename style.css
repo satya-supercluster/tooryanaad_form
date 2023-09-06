@@ -26,6 +26,7 @@ form{
     box-shadow:25px 25px 75px rgba(0,0,0,0.25),10px 10px 70px rgba(0,0,0,0.25),inset 5px 5px 10px rgba(0,0,0,0.5),inset 5px 5px 20px rgba(255,255,255,0.2),inset -5px -5px 15px rgba(0,0,0,0.75);
 }
 .type{
+    padding-top: 5px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 50%;
@@ -81,11 +82,11 @@ form{
 
 .asterisk{
     color:red;
-    text-shadow: 0 0 15px red;
+    text-shadow:0 0 10px red, 0 0 20px red;
 }
 .green{
     color:greenyellow;
-    text-shadow: 0 0 15px greenyellow;
+    text-shadow:0 0 10px greenyellow, 0 0 20px greenyellow;
 }
 .inp label{
     font-size: 1.4em;
@@ -227,7 +228,7 @@ form{
 @media (max-width:500px){
     .options{
         font-size: 1.1em;
-        padding: 5%;
+        padding: 5% 5%;
     }
     #form-screen{
         width:95%;
@@ -236,6 +237,7 @@ form{
 @media (max-width:370px){
     .options{
         font-size: 1em;
+        padding:7% 5%;
     }
     .inp input,.inp label,.games label,.comp label{
         font-size: .8em;

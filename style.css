@@ -17,7 +17,7 @@ form{
     overflow: hidden;
 }
 #form-screen{
-    width:80%;
+    width:60%;
     /* background-color: #141E46; */
     background-color: #301E67;
     padding:2%;
@@ -49,6 +49,7 @@ form{
     position: relative;
     color:white;
     box-shadow:25px 25px 75px rgba(0,0,0,0.25),10px 10px 70px rgba(0,0,0,0.25),inset 5px 5px 10px rgba(0,0,0,0.5),inset 5px 5px 20px rgba(255,255,255,0.2);
+    transition: all .5s ease-in-out;
 }
 .active{
     background-color: #F2BE22;
@@ -203,7 +204,21 @@ form{
      0px 0px 10px #5E6F64,0 0 30px 
      #5E6F64;
 }
-
+@media (min-width:1450px){
+    #form-screen{
+        width:50%;
+    }
+}
+@media (max-width:1150px){
+    #form-screen{
+        width:70%;
+    }
+}
+@media(max-width:950px){
+    #form-screen{
+        width:80%;
+    }
+}
 @media (max-width:800px){
     .options{
         font-size: 1.3em;

@@ -219,11 +219,14 @@ form{
     }
 }
 @media (max-width:500px){
+    .options{
+        font-size: 1.1em;
+    }
     #form-screen{
         width:95%;
     }
 }
-@media (max-width:330px){
+@media (max-width:370px){
     .options{
         font-size: 1em;
     }

@@ -51,11 +51,11 @@ form{
     position: absolute;
     background-color:cyan;
     width:0;
-    height:2px;
+    height:1px;
     bottom:0;
     box-shadow:0px 0px 15px cyan,
      0px 0px 10px cyan,0 0 30px cyan;
-    transition:width .5s ease;
+    transition:width .5s ease-in-out;
 }
 .options:hover::after,.active::after{
     width:100%;
@@ -107,7 +107,6 @@ form{
 .inp:focus-within 
  label,.label-up{
     transform:translate(-3px,-1.4em);
-    transform:translate(0,-1.4em);
 }
 
 .numv::-webkit-outer-spin-button,
@@ -118,6 +117,7 @@ form{
 .numv[type=number] {
     -moz-appearance:textfield;
 }
+
 
 
 .games{
@@ -168,11 +168,17 @@ form{
     outline: none;
     display: flex;
     flex-direction: column;
+    box-shadow:0px 0px 15px yellow,
+     0px 0px 10px yellow,0 0 30px yellow;
 }
 .btn:hover{
     color:white;
     background-color: blue;
+    box-shadow:0px 0px 15px cyan,
+     0px 0px 10px cyan,0 0 30px 
+     cyan;
 }
+
 @media (max-width:800px){
     .options{
         font-size: 1.3em;

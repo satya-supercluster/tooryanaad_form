@@ -67,8 +67,11 @@ form{
      #F2BE22;
     transition:width .5s ease-in-out;
 }
-.options:hover::after,.active::after{
+.options:hover::after{
     width:94%;
+}
+.active::after{
+    width:100%;
 }
 
 .inp label span{

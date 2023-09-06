@@ -239,7 +239,7 @@ form{
         padding: 5% 5%;
     }
     #form-screen{
-        width:95%;
+        width:100%;
     }
 }
 @media (max-width:370px){

@@ -54,7 +54,7 @@ form{
     color:#F24C3D;
 }
 
-/* 
+
 .options::after{
     content:'';
     position: absolute;
@@ -68,8 +68,8 @@ form{
     transition:width .5s ease-in-out;
 }
 .options:hover::after,.active::after{
-    width:100%;
-} */
+    width:97%;
+}
 
 .inp label span{
     font-size: 1.2em;
@@ -119,7 +119,7 @@ form{
 }
 .inp:focus-within 
  label,.label-up{
-    transform:translate(-3px,-1.4em);
+    transform:translate(0px,-1.4em);
 }
 
 .numv::-webkit-outer-spin-button,

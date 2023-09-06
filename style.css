@@ -191,6 +191,7 @@ form{
     display: flex;
     flex-direction: column;
     background-color:#FFBE0F;
+    color:#F24C3D;
     box-shadow:0px 0px 15px#FFBE0F,
      0px 0px 10px#FFBE0F;
      transition:all .5s ease;

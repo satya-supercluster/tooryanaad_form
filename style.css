@@ -9,8 +9,8 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 120vh;
-    background-color: rgb(2, 2, 34);
+    min-height: 100vh;
+    background-color: #183D3D;
 }
 form{
     margin:10px 0;
@@ -18,9 +18,12 @@ form{
 }
 #form-screen{
     width:80%;
-    background-color: rgb(67, 65, 65);
+    /* background-color: #141E46; */
+    background-color: #301E67;
     padding:1.5%;
-    border-radius: 15px;;
+    border-radius: 15px;
+    transition: all .5s ease;
+    box-shadow:25px 25px 75px rgba(0,0,0,0.25),10px 10px 70px rgba(0,0,0,0.25),inset 5px 5px 10px rgba(0,0,0,0.5),inset 5px 5px 20px rgba(255,255,255,0.2),inset -5px -5px 15px rgba(0,0,0,0.75);
 }
 .type{
     display: grid;
@@ -37,32 +40,40 @@ form{
     cursor: pointer;
     padding: 5%;
     font-size: 1.6em;
+    font-weight: 800;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     position: relative;
+    color:white;
+    box-shadow:25px 25px 75px rgba(0,0,0,0.25),10px 10px 70px rgba(0,0,0,0.25),inset 5px 5px 10px rgba(0,0,0,0.5),inset 5px 5px 20px rgba(255,255,255,0.2);
 }
 .active{
-    background-color: rgb(51, 51, 138);
+    background-color: #F2BE22;
+    color:#F24C3D;
 }
 
-
+/* 
 .options::after{
     content:'';
     position: absolute;
-    background-color:cyan;
+    background-color:#F2BE22;
     width:0;
-    height:1px;
+    height:2px;
     bottom:0;
-    box-shadow:0px 0px 15px cyan,
-     0px 0px 10px cyan,0 0 30px cyan;
+    box-shadow:0px 0px 15px #F2BE22,
+     0px 0px 10px #F2BE22,0 0 30px 
+     #F2BE22;
     transition:width .5s ease-in-out;
 }
 .options:hover::after,.active::after{
     width:100%;
-}
+} */
 
 .inp label span{
     font-size: 1.2em;
+    font-weight: 800;
 }
 
 .asterisk{
@@ -75,9 +86,11 @@ form{
 }
 .inp label{
     font-size: 1.4em;
+    font-weight: 600;
     position: relative;
     bottom:-1.4em;
     display: block;
+    color:white;
     transition:transform .5s ease;
 }
 .inp input{
@@ -89,7 +102,7 @@ form{
     width:100%;
     background: transparent;
     font-size: 1.4em;
-    border-bottom: 2px solid yellow;
+    border-bottom: 3px solid #FFBE0F;
     padding-left: 5px;
     
 }
@@ -127,7 +140,9 @@ form{
     grid-auto-flow: column;
 }
 .left{
+    color:white;
     font-size: 1.4em;
+    font-weight: 600;
 }
 .comp{
     display: grid;
@@ -141,14 +156,15 @@ form{
     cursor: pointer;
     margin-left: 5px;
     font-size: 1.2em;
-    
+    color:white;
+    font-weight: 550;
 }
 .options2 input{
     cursor: pointer;
     height:22px;
     width:22px;
     color:aquamarine;
-    accent-color: yellow;
+    accent-color: #FFBE0F;
 }
 
 
@@ -164,19 +180,22 @@ form{
     padding:10px 20px;
     border-radius: 15px;
     font-size: 1.5em;
+    font-weight: 600;
     border:none;
     outline: none;
     display: flex;
     flex-direction: column;
-    box-shadow:0px 0px 15px yellow,
-     0px 0px 10px yellow,0 0 30px yellow;
+    background-color:#FFBE0F;
+    box-shadow:0px 0px 15px#FFBE0F,
+     0px 0px 10px#FFBE0F;
+     transition:all .5s ease;
 }
 .btn:hover{
     color:white;
-    background-color: blue;
-    box-shadow:0px 0px 15px cyan,
-     0px 0px 10px cyan,0 0 30px 
-     cyan;
+    background-color: #5E6F64;
+    box-shadow:0px 0px 15px #5E6F64,
+     0px 0px 10px #5E6F64,0 0 30px 
+     #5E6F64;
 }
 
 @media (max-width:800px){

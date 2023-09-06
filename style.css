@@ -43,8 +43,8 @@ form{
     font-weight: 800;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     position: relative;
     color:white;
     box-shadow:25px 25px 75px rgba(0,0,0,0.25),10px 10px 70px rgba(0,0,0,0.25),inset 5px 5px 10px rgba(0,0,0,0.5),inset 5px 5px 20px rgba(255,255,255,0.2);
@@ -227,7 +227,7 @@ form{
 @media (max-width:500px){
     .options{
         font-size: 1.1em;
-        /* padding: 5%; */
+        padding: 5%;
     }
     #form-screen{
         width:95%;

@@ -68,12 +68,10 @@ form{
      #F2BE22;
     transition:width .5s ease-in-out;
 }
-.options:hover::after{
+.options:hover::after,.active::after{
     width:100%;
 }
-.active::after{
-    width:94%;
-}
+
 
 .inp label span{
     font-size: 1.2em;

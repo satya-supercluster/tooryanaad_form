@@ -38,7 +38,7 @@ form{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 5%;
+    padding:2.5% 5%;
     font-size: 1.6em;
     font-weight: 800;
     border-top-left-radius: 20px;
@@ -68,7 +68,8 @@ form{
     transition:width .5s ease-in-out;
 }
 .options:hover::after,.active::after{
-    width:97%;
+    width:96%;
+    left:2.2%;
 }
 
 .inp label span{
@@ -223,6 +224,7 @@ form{
 @media (max-width:500px){
     .options{
         font-size: 1.1em;
+        /* padding: 5%; */
     }
     #form-screen{
         width:95%;

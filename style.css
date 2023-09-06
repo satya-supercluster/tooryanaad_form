@@ -101,6 +101,8 @@ form{
     height:1.8em;
     width:100%;
     background: transparent;
+    color: white;
+    font-weight: 550;
     font-size: 1.4em;
     border-bottom: 3px solid #FFBE0F;
     padding-left: 5px;

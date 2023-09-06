@@ -68,8 +68,7 @@ form{
     transition:width .5s ease-in-out;
 }
 .options:hover::after,.active::after{
-    width:96%;
-    left:2.2%;
+    width:94%;
 }
 
 .inp label span{
@@ -174,6 +173,7 @@ form{
 
 
 .btn-div{
+    margin:1% 0;
     padding:2% 0;
     display:flex;
     justify-content: center;

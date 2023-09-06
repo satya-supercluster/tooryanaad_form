@@ -69,10 +69,10 @@ form{
     transition:width .5s ease-in-out;
 }
 .options:hover::after{
-    width:94%;
+    width:100%;
 }
 .active::after{
-    width:100%;
+    width:94%;
 }
 
 .inp label span{

@@ -3,6 +3,9 @@ let choosen=1;
 let ind=document.querySelector('.optional-ind')
 let team=document.querySelector('.optional-team')
 let names =document.querySelectorAll('.namev');
+let checkboxes=document.querySelectorAll('.k');
+let competitions=document.querySelectorAll('.i');
+let nukkad=document.querySelector('.g');
 function activation(){
     type.forEach(element => {
         element.classList.remove('active');
@@ -20,7 +23,10 @@ function activation(){
         names[1].required=false;
         names[2].required=false;
         names[0].required=true;
-
+        competitions.forEach(element => {
+            element.style.display="block";
+        });
+        nukkad.style.display="none";
     }
     else{
         ind.style.display="none";
@@ -28,7 +34,14 @@ function activation(){
         names[1].required=true;
         names[2].required=true;
         names[0].required=false;
+        competitions.forEach(element => {
+            element.style.display="none";
+        });
+        nukkad.style.display="block";
     }
+    checkboxes.forEach(element => {
+        element.checked=false; 
+    });
 }
 let field=document.querySelector('.type');
 type.forEach(element => {   

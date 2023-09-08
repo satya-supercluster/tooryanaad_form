@@ -6,11 +6,17 @@ let names =document.querySelectorAll('.namev');
 let checkboxes=document.querySelectorAll('.k');
 let competitions=document.querySelectorAll('.i');
 let nukkad=document.querySelector('.g');
+let nukkad_box=document.querySelector('.g .k');
 function activation(){
     type.forEach(element => {
         element.classList.remove('active');
     });
     this.classList.add('active');
+
+    checkboxes.forEach(element => {
+        element.checked=false; 
+    });
+
     if(this.classList.contains('ind')){
         choosen=1;
     }
@@ -27,6 +33,7 @@ function activation(){
             element.style.display="block";
         });
         nukkad.style.display="none";
+        nukkad_box.checked=false;
     }
     else{
         ind.style.display="none";
@@ -38,10 +45,9 @@ function activation(){
             element.style.display="none";
         });
         nukkad.style.display="block";
+        nukkad_box.checked=true;
     }
-    checkboxes.forEach(element => {
-        element.checked=false; 
-    });
+    
 }
 let field=document.querySelector('.type');
 type.forEach(element => {   

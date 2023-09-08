@@ -11,6 +11,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: #183D3D;
+    /* background-color:rgb(17, 14, 14); */
 }
 form{
     margin:10px 0;
@@ -20,10 +21,13 @@ form{
     width:60%;
     /* background-color: #141E46; */
     background-color: #301E67;
+    /* background-color: rgba(37, 43, 72,0.4); */
+    
     padding:2%;
     border-radius: 15px;
     transition: all .5s ease;
     box-shadow:25px 25px 75px rgba(0,0,0,0.25),10px 10px 70px rgba(0,0,0,0.25),inset 5px 5px 10px rgba(0,0,0,0.5),inset 5px 5px 20px rgba(255,255,255,0.2),inset -5px -5px 15px rgba(0,0,0,0.75);
+    border:3px solid #F2BE22;
 }
 .type{
     padding-top: 5px;
@@ -172,7 +176,9 @@ form{
     accent-color: #FFBE0F;
 }
 
-
+.g{
+    display:none;
+}
 
 
 .btn-div{

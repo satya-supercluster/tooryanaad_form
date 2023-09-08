@@ -12,6 +12,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: #183D3D;
+    padding: 2% 0;
     /* background-color:rgb(17, 14, 14); */
 }
 form{
@@ -19,7 +20,6 @@ form{
     overflow: hidden;
 }
 #form-screen{
-    margin:2% 0;
     width:60%;
     /* background-color: #141E46; */
     background-color: #301E67;

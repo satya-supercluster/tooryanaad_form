@@ -118,6 +118,7 @@ form{
 .inp{
     padding:1.3%;
     height:6em;
+    
 }
 .op{
     overflow: hidden;
@@ -160,6 +161,8 @@ form{
 .options2{
     display: flex;
     padding:2%;
+    /* justify-content: center; */
+    align-items: center;
 }
 .options2 label{
     cursor: pointer;
@@ -167,6 +170,8 @@ form{
     font-size: 1.2em;
     color:white;
     font-weight: 550;
+    position: relative;
+    top:-3px;
 }
 .options2 input{
     cursor: pointer;

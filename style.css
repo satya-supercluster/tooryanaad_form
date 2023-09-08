@@ -18,6 +18,7 @@ form{
     overflow: hidden;
 }
 #form-screen{
+    margin:2% 0;
     width:60%;
     /* background-color: #141E46; */
     background-color: #301E67;
@@ -171,7 +172,7 @@ form{
     color:white;
     font-weight: 550;
     position: relative;
-    top:-3px;
+    top:-4px;
 }
 .options2 input{
     cursor: pointer;
@@ -183,6 +184,7 @@ form{
 
 .g{
     display:none;
+    pointer-events: none;
 }
 
 

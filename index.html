@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Competition Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,35 +23,71 @@
         <div class="optional-ind op">
             <div class="inp">
                 <label class="top">नाम (Name)<span class="asterisk anames">*</span></label>
-                <input type="text"
+                <div class="flex">
+                    <input type="text"
                 class="p namev" onchange='check()' required>
+                <span>
+                    <ion-icon name="person-circle"></ion-icon>
+                </span>
+                </div>
+                
             </div>
         </div>
         <div class="optional-team op">
 
             <div class="inp">
                 <label class="top">समूह का नाम (Team Name)<span class="asterisk anames">*</span></label>
-                <input type="text" class="p namev" onchange='check()' >
+                <div class="flex">
+                    <input type="text" class="p namev" onchange='check()' >
+                <span>
+                    <ion-icon name="people-circle"></ion-icon>
+                </span>
+                </div>
+                
             </div>
             <div class="inp">
                 <label class="top">समूह प्रतिनिधि का नाम (Team Representative)<span class="asterisk anames">*</span></label>
-                <input type="text" class="p namev" onchange='check()'  >
+                <div class="flex">
+                    <input type="text" class="p namev" onchange='check()'  >
+                    <span>
+                        <ion-icon name="person-circle"></ion-icon>
+                    </span>
+                </div>
+                
             </div>
         </div>
 
         <div class="inp">
             <label class="top">कॉलेज का नाम (College Name)<span class="asterisk anames">*</span></label>
-            <input type="text" class="p namev" onchange='check()'  required>
+            <div class="flex">
+                <input type="text" class="p namev" onchange='check()'  required>
+            <span>
+                <ion-icon name="school"></ion-icon>
+            </span>
+            </div>
+            
         </div>
 
         <div class="inp">
             <label class="top">ई - मेल पता (Email Address)<span class="asterisk aemail">*</span></label>
-            <input type="email" class="p emailv" onchange='check()' required>
+            <div class="flex">
+                <input type="email" class="p emailv" onchange='check()' required>
+            <span>
+                <ion-icon name="mail"></ion-icon>
+            </span>
+            </div>
+            
         </div>
 
         <div class="inp">
             <label class="top">संपर्क सूत्र (Contact No.)<span class="asterisk anum">*</span></label>
-            <input type="number" class="p numv" onchange='check()'  required>
+            <div class="flex">
+                <input type="number" class="p numv" onchange='check()'  required>
+            <span>
+                <ion-icon name="call"></ion-icon>
+            </span>
+            </div>
+            
         </div>
 
         <div class="games">
@@ -112,6 +150,9 @@
       </form>
     </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

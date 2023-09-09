@@ -7,16 +7,16 @@
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
-
+    font-family: 'Tiro Devanagari Hindi', serif;
 }
 body{
     display:flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #183D3D;
+    /* background-color: #183D3D; */
     padding: 2% 0;
-    /* background-color:rgb(17, 14, 14); */
+    background-color:rgb(17, 14, 14);
 }
 form{
     margin:10px 0;
@@ -25,8 +25,8 @@ form{
 #form-screen{
     width:60%;
     /* background-color: #141E46; */
-    background-color: #301E67;
-    /* background-color: rgba(37, 43, 72,0.4); */
+    /* background-color: #301E67; */
+    background-color: rgba(37, 43, 72,0.4);
     
     padding:2%;
     border-radius: 15px;
@@ -117,14 +117,28 @@ form{
     font-weight: 550;
     font-size: 1.4em;
     border-bottom: 3px solid #FFBE0F;
-    padding-left: 5px;
+    padding-left: 10px;
     
 }
 .inp{
     padding:1.3%;
     height:6em;
-    
 }
+
+
+.flex{
+    display: flex;
+    gap:10px;
+}
+
+.flex ion-icon{
+    position: relative;
+    font-size: 2em;
+    color:#FFBE0F;
+    bottom:2px;
+    right:-5px;
+}
+
 .op{
     overflow: hidden;
     display: block; 
@@ -135,6 +149,7 @@ form{
 .inp:focus-within 
  label,.label-up{
     transform:translate(0px,-1.4em);
+    color:#FFBE0F;
 }
 
 .numv::-webkit-outer-spin-button,
@@ -174,7 +189,7 @@ form{
     margin-left: 5px;
     font-size: 1.2em;
     color:white;
-    font-weight: 550;
+    font-weight: 600;
     position: relative;
     top:-4px;
 }
@@ -284,5 +299,8 @@ form{
     .btn{
         padding:5px 10px;
         font-size: .8em;
+    }
+    .inp ion-icon{
+        font-size: 1.5em;
     }
 }

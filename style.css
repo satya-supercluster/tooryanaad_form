@@ -254,22 +254,31 @@ form{
     border-radius: 15px;
     font-size: 1.5em;
     font-weight: 600;
+    cursor: pointer;
     border:none;
     outline: none;
     display: flex;
     flex-direction: column;
     background-color:#FFBE0F;
     color:#F24C3D;
-    box-shadow:0px 0px 15px#FFBE0F,
-     0px 0px 10px#FFBE0F;
-     transition:all .5s ease;
+    box-shadow:25px 25px 75px rgba(0,0,0,0.25),10px 10px 70px rgba(0,0,0,0.25),inset 5px 5px 10px rgba(0,0,0,0.5),inset 5px 5px 20px rgba(255,255,255,0.2);
 }
 .btn:hover{
+    box-shadow:0px 0px 15px#FFBE0F,
+     0px 0px 10px#FFBE0F;
+}
+.contact{
+    display:flex;
     color:white;
-    background-color: #5E6F64;
-    box-shadow:0px 0px 15px #5E6F64,
-     0px 0px 10px #5E6F64,0 0 30px 
-     #5E6F64;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin: 10px 5px;
+}
+.c1{
+    color:#FFBE0F;
+}
+.c1,.c2,.c3,.kontact{
+    margin:2px;
 }
 @media (min-width:1450px){
     #form-screen{
@@ -296,7 +305,7 @@ form{
     .options{
         font-size: 1.3em;
     }
-    .inp input,.inp label,.games label,.comp label{
+    .inp input,.inp label,.games label,.comp label,.contact{
         font-size: 1em;
     }
     .inp{
@@ -338,7 +347,7 @@ form{
         font-size: 1em;
         padding:7% 5%;
     }
-    .inp input,.inp label,.games label,.comp label{
+    .inp input,.inp label,.games label,.comp label,.contact{
         font-size: .8em;
     }
     .btn{
